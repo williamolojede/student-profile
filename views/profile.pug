@@ -1,0 +1,25 @@
+doctype html
+html
+  include partials/head.pug
+  body
+    #profile
+      img(
+        src=user.avatar_url
+        alt='Avatar'
+        id='avatar'
+      )
+      p
+        span= user.profile_name
+      ul
+        li
+          | 
+          span #{user.no_of_badges} 
+          | Badges earned
+            
+        li
+          | 
+          span #{user.js_point} 
+          | JavaScript points
+        li
+          a(href='/') search again
+        
